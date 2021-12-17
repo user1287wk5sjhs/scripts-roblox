@@ -2,3 +2,6 @@ local w = Instance.new("WeldConstraint")
 w.Parent = getgenv().Parent 
 w.Part0 = getgenv().Part0
 w.Part1 = getgenv().Part1
+getgenv().DestroyWeld = function()
+    w:Destroy()
+end
